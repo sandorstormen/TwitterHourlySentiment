@@ -1,0 +1,1266 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-efd6b3d2-1005-45ed-8ab4-ec83848af4e6", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-efd6b3d2-1005-45ed-8ab4-ec83848af4e6'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "Wesley",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "Mimi",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-f95e0916-40f6-47d4-b288-30878af45234", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-f95e0916-40f6-47d4-b288-30878af45234'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "Doctor",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wesley",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "February",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Sameer",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Red",
+        "avg" : 0.4,
+        "+std" : 1.4198039027185572,
+        "-std" : -0.619803902718557
+      },
+      {
+        "title" : "Mimi",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "Kaagaz",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Star",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Dune",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Sooryavanshi",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wars",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "2018",
+        "avg" : 0.5,
+        "+std" : 1.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "We",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Hero",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Disclosure",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Candyman",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Another Girl",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Girl",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Monday",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Stay",
+        "avg" : 0.0,
+        "+std" : 1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Music",
+        "avg" : 2.0,
+        "+std" : 2.0,
+        "-std" : 2.0
+      },
+      {
+        "title" : "Summer",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Eternals",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Justice",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Godfather",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Hosts",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Valimai",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Hellraiser",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Applause",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-96ef8080-8997-4e19-bc35-123aa61d1f31", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-96ef8080-8997-4e19-bc35-123aa61d1f31'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "Doctor",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wesley",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "February",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Sameer",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Red",
+        "avg" : 0.4,
+        "+std" : 1.4198039027185572,
+        "-std" : -0.619803902718557
+      },
+      {
+        "title" : "Mimi",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "Kaagaz",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Star",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Dune",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Sooryavanshi",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wars",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "2018",
+        "avg" : 0.5,
+        "+std" : 1.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "We",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Hero",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Disclosure",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Candyman",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Another Girl",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Girl",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Monday",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Stay",
+        "avg" : 0.0,
+        "+std" : 1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Music",
+        "avg" : 2.0,
+        "+std" : 2.0,
+        "-std" : 2.0
+      },
+      {
+        "title" : "Summer",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Eternals",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Justice",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Godfather",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Hosts",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Valimai",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Hellraiser",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Applause",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Prince",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Most Eligible Bachelor",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "Jesus",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wish",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Alone",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Home",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Wicked",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Princess",
+        "avg" : -0.6666666666666666,
+        "+std" : -0.19526214587563495,
+        "-std" : -1.1380711874576983
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-91d537d1-0d5c-4ab3-afbd-2d4382323caa", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-91d537d1-0d5c-4ab3-afbd-2d4382323caa'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "Doctor",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wesley",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "February",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Sameer",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Red",
+        "avg" : 0.4,
+        "+std" : 1.4198039027185572,
+        "-std" : -0.619803902718557
+      },
+      {
+        "title" : "Mimi",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "Kaagaz",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Star",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Dune",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Sooryavanshi",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wars",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "2018",
+        "avg" : 0.5,
+        "+std" : 1.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "We",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Hero",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Disclosure",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Candyman",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Another Girl",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Girl",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Monday",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Stay",
+        "avg" : 0.0,
+        "+std" : 1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Music",
+        "avg" : 2.0,
+        "+std" : 2.0,
+        "-std" : 2.0
+      },
+      {
+        "title" : "Summer",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Eternals",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Justice",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Godfather",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Hosts",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Valimai",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Hellraiser",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Applause",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Prince",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Most Eligible Bachelor",
+        "avg" : 0.0,
+        "+std" : 0.816496580927726,
+        "-std" : -0.816496580927726
+      },
+      {
+        "title" : "Jesus",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Wish",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Alone",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Home",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Wicked",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Princess",
+        "avg" : -0.6666666666666666,
+        "+std" : -0.19526214587563495,
+        "-std" : -1.1380711874576983
+      },
+      {
+        "title" : "Invincible",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Dead",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "The Great Indian Kitchen",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Animation",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Live",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Uncharted",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Lost",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      },
+      {
+        "title" : "Family",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "The Flash",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Eeswaran",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Love",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Dangerous",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Dream",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Uploaded",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Monster",
+        "avg" : 0.5,
+        "+std" : 1.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Theater",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Being",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Radhe",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Shadows",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Father",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Radhe Shyam",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Time",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Fierce",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Madison",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Blade",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-b9bdbb5e-763d-49e2-a6f6-032161bae640", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-b9bdbb5e-763d-49e2-a6f6-032161bae640'></div>
+    </body>
+</html>

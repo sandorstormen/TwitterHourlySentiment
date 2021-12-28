@@ -1,0 +1,10 @@
+twitter {
+  consumer {
+    key = "<replace-with-consumer-key>"
+    secret = "<replace-with-consumer-secret>"
+  }
+  access {
+    key = "<replace-with-access-key>"
+    secret = "<replace-with-access-secret>"
+  }
+}

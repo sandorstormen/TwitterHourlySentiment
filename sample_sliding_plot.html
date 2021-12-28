@@ -1,0 +1,824 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-adae74c2-b70c-4f5a-a6f2-b535cab781c2", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-adae74c2-b70c-4f5a-a6f2-b535cab781c2'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "The French Dispatch",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "King Richard",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Dune",
+        "avg" : 0.0,
+        "+std" : 1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "2020",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Two",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Uncharted",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "RRR",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-16235fa5-0ebb-4e8f-a7b6-2f4530f9e795", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-16235fa5-0ebb-4e8f-a7b6-2f4530f9e795'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "V",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Sisters",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Darling",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-3bdad1e3-e286-4ca5-86d5-c9f1f95b7c56", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-3bdad1e3-e286-4ca5-86d5-c9f1f95b7c56'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "Murder",
+        "avg" : 0.0,
+        "+std" : 0.7071067811865476,
+        "-std" : -0.7071067811865476
+      },
+      {
+        "title" : "One",
+        "avg" : 0.0,
+        "+std" : 0.7071067811865476,
+        "-std" : -0.7071067811865476
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-10565d5c-49f6-4caf-877f-ce8dce6cd13b", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-10565d5c-49f6-4caf-877f-ce8dce6cd13b'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "Rambo",
+        "avg" : -0.5,
+        "+std" : 0.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Gym",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Ana",
+        "avg" : 1.0,
+        "+std" : 1.0,
+        "-std" : 1.0
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-f354cf1f-0642-420d-acd3-079cdcd0325a", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-f354cf1f-0642-420d-acd3-079cdcd0325a'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "Uncharted",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Dune",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "The Batman",
+        "avg" : 0.0,
+        "+std" : 1.0,
+        "-std" : -1.0
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-ee6a4410-3876-4313-bf70-a6342a4ba2ab", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-ee6a4410-3876-4313-bf70-a6342a4ba2ab'></div>
+    </body>
+</html><html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "layers" : [
+    {
+      "mark" : "point",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal",
+          "title" : "Movie title"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "avg",
+          "type" : "quantitative",
+          "title" : "Sentiment"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "filled" : true,
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    },
+    {
+      "mark" : "rule",
+      "encoding" : {
+        "x" : {
+          "field" : "title",
+          "type" : "nominal"
+        },
+        "y" : {
+          "scale" : {
+            "type" : "linear",
+            "domain" : [
+              -4.0,
+              4.0
+            ]
+          },
+          "field" : "+std",
+          "type" : "quantitative"
+        },
+        "y2" : {
+          "field" : "-std",
+          "type" : "quantitative"
+        }
+      },
+      "config" : {
+        "mark" : {
+          "orient" : "vertical",
+          "fontSize" : 48.0
+        }
+      }
+    }
+  ],
+  "description" : "Box plot of movies",
+  "data" : {
+    "values" : [
+      {
+        "title" : "A Quiet Place Part II",
+        "avg" : -0.3333333333333333,
+        "+std" : 0.13807118745769836,
+        "-std" : -0.804737854124365
+      },
+      {
+        "title" : "Love",
+        "avg" : 0.0,
+        "+std" : 0.0,
+        "-std" : 0.0
+      },
+      {
+        "title" : "Truth",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Big Brother",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Check",
+        "avg" : -1.0,
+        "+std" : -1.0,
+        "-std" : -1.0
+      },
+      {
+        "title" : "Framed",
+        "avg" : 0.0,
+        "+std" : 1.0,
+        "-std" : -1.0
+      }
+    ]
+  },
+  "config" : {
+    "cell" : {
+      "width" : 1000.0,
+      "height" : 400.0
+    },
+    "mark" : {
+      "fontSize" : 48.0
+    },
+    "axis" : {
+      "tickLabelFontSize" : 20.0,
+      "titleFontSize" : 40.0
+    }
+  }
+}
+   }
+   vg.embed("#vegas-5de4d920-bd52-4393-b155-8131d1b42918", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-5de4d920-bd52-4393-b155-8131d1b42918'></div>
+    </body>
+</html>

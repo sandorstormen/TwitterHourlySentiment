@@ -1,0 +1,3 @@
+# ID2221-Project
+
+In order to run the code, one zookeeper server needs to run and be available at port 2181, and one kafka broker needs to run and be available at port 9092. The topics “tweets” and “agg” need to be created. In the folder producer/resources the file application.conf.template must be copied as application.conf and the access and consumer keys from a twitter API project must be inserted. Then two separate shells should be started in the consumer and producer folders, where sbt run is to be run in each shell. It will then produce the index.html file, containing the plots of the hourly aggregates.
